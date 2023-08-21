@@ -58,7 +58,7 @@
                                 </div>
                             </div>
 
-                            <div class="social-media-login-wrap">
+                            {{-- <div class="social-media-login-wrap">
                                 @if(env('GOOGLE_LOGIN_STATUS') == 1)
                                 <div class="row mb-2">
                                     <div class="col-md-12">
@@ -81,7 +81,7 @@
                                 </div>
                                 @endif
                                     
-                            </div>
+                            </div> --}}
 
                         </form>
                     </div>

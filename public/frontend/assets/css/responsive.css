@@ -51,7 +51,7 @@
 @media only screen and (max-width: 1680px) {
 /*Menu CSS*/
     .header-nav-left-side form {
-        width: 310px;
+        width: 450px;
     }
 /*Menu CSS*/
 
@@ -78,7 +78,7 @@
 @media only screen and (max-width: 1475px) {
     /*Menu CSS*/
     .header-nav-left-side form {
-        width: 265px;
+        width: 400px;
     }
     /*Menu CSS*/
     /*Course watch*/

@@ -865,7 +865,7 @@ button:focus {
 
 #mainNav {
     position: fixed;
-    height: 100px;
+    height: 70px;
     display: flex !important;
     transition: all ease .6s;
     background: transparent;
@@ -995,7 +995,7 @@ button:focus {
     align-items: center;
 }
 .header-nav-left-side:before {
-    height: 103px;
+    height: 80px;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.1);
     content: "";
@@ -1006,16 +1006,16 @@ button:focus {
 /* search box */
 .header-nav-left-side form {
     width: 648px;
-    height: 50px;
+    height: 40px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    border-radius: 126px;
+    border-radius: 5px;
     margin-left: 30px;
     position: relative;
 }
 .header-nav-left-side form .form-control {
     background-color: transparent;
-    height: 46px;
+    height: 36px;
     color: #D8D8D8;
     border: none;
 }

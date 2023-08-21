@@ -144,7 +144,7 @@
                             <a class="nav-link" aria-current="page" href="{{ route('contact') }}">{{__('Contact')}}</a>
                         </li>
                         @endif
-                        <li class="nav-item dropdown menu-round-btn menu-language-btn dropdown-top-space">
+                        <!-- <li class="nav-item dropdown menu-round-btn menu-language-btn dropdown-top-space">
                             <a class="nav-link" href="#">
                                 <img src="{{asset($selectedLanguage->flag)}}" alt="Flag" class="radius-50">
                             </a>
@@ -156,7 +156,7 @@
                                             class="radius-50">{{$app_lang->language}}</a></li>
                                 @endforeach
                             </ul>
-                        </li>
+                        </li> -->
                         @if(@$authUser->role != USER_ROLE_ADMIN)
                         @if(auth::user())
                         <!-- Menu Notification Option Start -->

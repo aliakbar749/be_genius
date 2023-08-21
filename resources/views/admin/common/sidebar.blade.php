@@ -203,7 +203,7 @@
             </li>
         @endcanany
 
-        @canany(['manage_organization', 'pending_organization', 'approved_organization', 'all_organization'])
+        {{-- @canany(['manage_organization', 'pending_organization', 'approved_organization', 'all_organization'])
             <li>
                 <a class="has-arrow" href="#">
                     <span class="iconify" data-icon="la:chalkboard-teacher"></span>
@@ -258,7 +258,7 @@
                     @endcan
                 </ul>
             </li>
-        @endcanany
+        @endcanany --}}
 
         @can('manage_student')
             <li class=" {{ active_if_full_match('admin/student') }} ">
@@ -388,7 +388,7 @@
             </li>
         @endcan
 
-        @can('manage_promotion')
+        {{-- @can('manage_promotion')
         <li class="{{ @$navPromotionParentActiveClass }}">
             <a class="has-arrow" href="#">
                 <span class="iconify" data-icon="ic:round-discount"></span>
@@ -409,7 +409,7 @@
                 </li>
             </ul>
         </li>
-        @endcan
+        @endcan --}}
 
         @can('payout')
             <li class="{{ @$navFinanceParentActiveClass }}">
@@ -511,7 +511,7 @@
             </li>
         @endcan
 
-        @can('ranking_level')
+        <!-- @can('ranking_level')
             <li class="{{ @$navRankingActiveClass }}">
                 <a class="has-arrow" href="#">
                     <span class="iconify" data-icon="fa6-solid:ranking-star"></span>
@@ -526,7 +526,7 @@
                     </li>
                 </ul>
             </li>
-        @endcan
+        @endcan -->
         @can('skill')
             <li class="{{ @$subNavSkillActiveClass }}">
                 <a class="has-arrow" href="#">
@@ -543,7 +543,7 @@
                 </ul>
             </li>
         @endcan
-        @can('manage_language')
+        <!-- @can('manage_language')
             <li>
                 <a class="has-arrow" href="#">
                     <span class="iconify" data-icon="fa6-solid:language"></span>
@@ -558,7 +558,7 @@
                     </li>
                 </ul>
             </li>
-        @endcan
+        @endcan -->
 
         @can('support_ticket')
             <li class="{{ @$navSupportTicketParentActiveClass }}">
@@ -886,7 +886,7 @@
             </li>
         @endcan
 
-        <li class="{{ @$navForumParentActiveClass }}">
+        <!-- <li class="{{ @$navForumParentActiveClass }}">
                 <a class="has-arrow" href="#">
                     <span class="iconify" data-icon="carbon:forum"></span>
                     <span>{{ __('Manage Forum') }}</span>
@@ -899,7 +899,7 @@
                         </a>
                     </li>
                 </ul>
-            </li>
+            </li> -->
 
         @can('account_setting')
             <li>
@@ -924,7 +924,7 @@
             </li>
         @endcan
 
-        @can('manage_affiliate')
+        <!-- @can('manage_affiliate')
         <li class="">
             <a class="has-arrow" href="#">
                 <span class="iconify" data-icon="tabler:affiliate"></span>
@@ -951,8 +951,8 @@
                 </li>
             </ul>
         </li>
-        @endif
-        @can('manage_version_update')
+        @endif -->
+        <!-- @can('manage_version_update')
             <li class="{{ @$subNavVersionUpdateActiveClass }}">
                 <a href="{{ route('settings.file-version-update') }}">
                     <i class="fa fa-circle"></i>
@@ -965,6 +965,13 @@
             <a href="#">
                 <span>
                     <h3>{{ __('Software Version') }} {{ get_option('current_version', 2.4) }}</h3>
+                </span>
+            </a>
+        </li> -->
+        <li class="mb-5 text-center">
+        <a href="#">
+                <span>
+                    <h3>Stay With BeGenius</h3>
                 </span>
             </a>
         </li>

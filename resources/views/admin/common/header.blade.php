@@ -48,7 +48,7 @@
                                 <!-- Notification Dropdown End -->
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <a href="#" class="btn btn-dropdown site-language" id="dropdownLanguage" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="{{asset(selectedLanguage()->flag)}}" alt="icon">
                                 </a>
@@ -63,10 +63,10 @@
                                     @endforeach
 
                                 </ul>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#" class="btn btn-dropdown user-profile" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="{{getImageFile(auth::user()->image_path)}}" alt="icon">
+                                    <img src="{{ getImageFile(auth::user()->image_path)}}" alt="icon">
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownUser">
                                     <li>
